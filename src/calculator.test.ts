@@ -37,3 +37,16 @@ test('multiply three by four is twelve', () => {
   // Assert
   expect(result).toBe(expected);
 });
+test('divide six by three is two', () => {
+  // Arrange
+  const a = 6;
+  const b = 3;
+  const expected = 2;
+
+  // Act
+  const result = divide(a, b);
+
+  // Assert
+  expect(result).toBe(expected);
+});
+
