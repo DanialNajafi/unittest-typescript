@@ -1,4 +1,4 @@
-import { add, subtract } from "./calculator";
+import { add, subtract, multiply, divide } from "./calculator";
 
 test("add three to two is five", () => {
   // Arrange
@@ -49,4 +49,9 @@ test('divide six by three is two', () => {
   // Assert
   expect(result).toBe(expected);
 });
+test('divide by zero throws an error', () => {
+  const a = 10;
+  const b = 0;
 
+  expect(() => divide(a, b)).toThrow('Division durch 0 ist nicht erlaubt');
+});
